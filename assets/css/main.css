@@ -28,6 +28,28 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
+#skills {
+	padding: 2em 0;
+}
+
+	#skills h2 {
+		font-size: 2em;
+		margin-bottom: 0.5em;
+	}
+
+	#skills p {
+		margin-bottom: 1em;
+	}
+
+.skills-list {
+	list-style-type: none;
+	padding: 0;
+}
+
+	.skills-list li {
+		margin: 0.5em 0;
+		font-size: 1.2em;
+	}
 
 iframe {
 	max-width: 100%;
