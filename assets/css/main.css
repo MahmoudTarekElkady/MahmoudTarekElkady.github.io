@@ -52,8 +52,6 @@ footer, header, hgroup, menu, nav, section {
 	}
 
 iframe {
-	max-width: 100%;
-	height: auto;
 	display: block;
 	margin: 0 auto;
 }
@@ -2625,7 +2623,12 @@ input, select, textarea {
 
 		.image img {
 			display: block;
+			width: 100%;
+			height: auto;
+			object-fit: cover; /* Ensures the image maintains a square-like aspect ratio */
+			border-radius: 0; /* Explicitly remove any rounded corners */
 		}
+
 
 		.image.left, .image.right {
 			max-width: 40%;
@@ -3341,6 +3344,33 @@ input, select, textarea {
 		z-index: 1;
 		min-height: 100vh;
 	}
+#intro {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.intro-content {
+	display: flex;
+	gap: 20px; /* Space between image and info */
+	align-items: center;
+}
+
+.image img {
+	width: 300px; /* Adjust the size of the image */
+	border-radius: 5px; /* Adds rounded corners to the frame */
+	border: 5px solid rgba(255, 255, 255, 0.075); /* Thicker black border for a frame-like effect */
+	box-shadow: 0 2px 4px rgba(255, 255, 255, 0.075); /* Adds a subtle shadow around the frame */
+	padding: 3px; /* Reduces space between the image and the frame */
+}
+
+
+
+.info {
+	max-width: 500px;
+}
+
+
 
 		#intro input, #intro select, #intro textarea {
 			color: #ffffff;
