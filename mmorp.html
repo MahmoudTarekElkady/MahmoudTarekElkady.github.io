@@ -1,11 +1,77 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>MMORPG Project | Mahmoud Elkady</title>
+    <title>Augmented Reality MMORPG Project | Mahmoud Elkady</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        /* General text alignment and size */
+        body, ul {
+            text-align: left !important; /* Ensure all text is left-aligned */
+            font-size: 14px !important; /* Default font size for general text */
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        /* Main Title - H1 (Centered) */
+        h1 {
+            font-size: 3em !important; /* Slightly bigger for the main title */
+            text-align: center; /* Center the main title */
+            margin-bottom: 10px; /* Reduce space below the main title */
+        }
+
+        /* Section Titles - H2 */
+        h2 {
+            font-size: 2em !important; /* Slightly smaller section title */
+            padding:-40px;
+            height:3px;
+            text-align:center;
+        }
+
+        /* Subsection Titles - H3 */
+        h3 {
+            font-size: 1.3em !important; /* Slightly smaller subsection title */
+            margin-top: 15px; /* Add a bit of space above subsection titles */
+            margin-bottom: 8px; /* Reduce space below subsection titles */
+        }
+
+        /* Project Details and Tools and Technologies Section - Make smaller */
+        .project-details, .tools-technologies {
+            font-size: 13px !important; /* Small font for these sections */
+        }
+
+        /* Video Section Styling */
+        .video iframe {
+            width: 650px !important;
+            height: 350px !important;
+        }
+
+        .video {
+            margin-bottom: 20px;
+        }
+
+        /* Ensure Header and Footer Are Positioned and Styled Consistently */
+        header, footer {
+            text-align: left !important;
+        }
+
+        footer {
+            padding: 10px;
+        }
+        .p1 {
+            padding: 10px;
+            font-size: 1.3em;
+            height:60px;
+        }
+
+        .button.large {
+            font-size: 14px !important; /* Adjust button size */
+        }
+    </style>
 </head>
 <body class="is-preload">
 
@@ -22,8 +88,8 @@
             <!-- Project Title and Intro -->
             <article class="post featured">
                 <header class="major">
-                    <h1>MMORPG Project</h1>
-                    <p>Step into an immersive multiplayer experience where players can explore massive open worlds, engage in epic battles, and forge their unique paths. This MMORPG is designed to bring life to player interactions, dynamic environments, and rich storylines.</p>
+                    <h1>Augmented Reality MMORPG Project</h1>
+                    <p>Step into an immersive augmented reality experience where players explore vast open worlds, engage in dynamic battles, and forge their unique paths. This MMORPG uses cutting-edge AI, including agents and deep reinforcement learning, to create responsive NPC behavior, ensuring a constantly evolving and realistic gameplay experience.</p>
                 </header>
 
                 <!-- Gameplay Video -->
@@ -32,34 +98,40 @@
                     <iframe width="650" height="350" src="https://www.youtube.com/embed/PEIZfWQPWg8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
-                <!-- Details Section -->
-                <section>
+                <!-- Project Details Section -->
+                <section class="project-details">
                     <header class="major">
                         <h2>Project Details</h2>
                     </header>
-                    <p>
-                        This MMORPG project is crafted to offer players an engaging and expansive experience:
-                    </p>
+                    <div class="p1">
+                        <p1>
+                            This augmented reality MMORPG is designed to provide an unparalleled player experience:
+                        </p1>
+                    </div>
+                  
                     <ul>
-                        <li><strong>Open-World Exploration:</strong> Navigate breathtaking landscapes, from dense forests to bustling cities.</li>
-                        <li><strong>Dynamic NPC Interactions:</strong> Engage with non-playable characters who react based on player decisions.</li>
-                        <li><strong>Quests and Objectives:</strong> Complete thrilling quests ranging from small tasks to epic adventures.</li>
-                        <li><strong>Real-Time Combat System:</strong> Experience fluid and responsive combat mechanics, including weapon switching and skill casting.</li>
-                        <li><strong>Multiplayer Features:</strong> Collaborate with or compete against other players in real time.</li>
-                        <li><strong>Customizable Avatars:</strong> Design unique characters with a variety of cosmetic and functional options.</li>
+                        <li><strong>Augmented Reality Integration:</strong> The game uses augmented reality to bring the game world into the real world, allowing players to interact with their surroundings in new and exciting ways.</li>
+                        <li><strong>AI-Driven NPC Behavior:</strong> Agents powered by AI control NPC actions, making them responsive and adaptable to the player's actions.</li>
+                        <li><strong>Deep Reinforcement Learning:</strong> NPCs learn and improve their behavior over time through deep reinforcement learning algorithms, making the world feel more alive and dynamic.</li>
+                        <li><strong>Real-Time Combat:</strong> Engage in fluid, action-packed combat, where AI-driven enemies learn from player strategies and adapt to provide a more challenging experience.</li>
+                        <li><strong>Open-World Exploration:</strong> Navigate a vast, immersive world with cities, forests, and dungeons, all seamlessly integrated into the augmented reality environment.</li>
+                        <li><strong>Multiplayer Features:</strong> Connect with other players in real time to collaborate or compete in epic adventures.</li>
                     </ul>
                 </section>
 
-                <!-- Tools Section -->
-                <section>
+                <!-- Tools and Technologies Section -->
+                <section class="tools-technologies">
                     <header class="major">
                         <h2>Tools and Technologies Used</h2>
                     </header>
                     <ul>
-                        <li><strong>Unity Engine:</strong> The primary platform for developing the game world and systems.</li>
+                        <li><strong>Unity Engine:</strong> The primary platform for developing the game world and systems, including augmented reality integration.</li>
                         <li><strong>C# Programming:</strong> Implemented mechanics, game logic, and multiplayer functionality.</li>
                         <li><strong>Blender:</strong> Created high-quality 3D assets, including characters and environments.</li>
-                        <li><strong>Photon Networking:</strong> Integrated multiplayer networking for seamless online gameplay.</li>
+                        <li><strong>Deep Reinforcement Learning:</strong> Used advanced machine learning algorithms to control NPC behavior, allowing them to adapt and improve over time.</li>
+                        <li><strong>AI Agents:</strong> Implemented AI agents to handle NPC interactions and decision-making processes.</li>
+                        <li><strong>ARKit / ARCore:</strong> Integrated augmented reality features for seamless interaction between the game world and the real world.</li>
+                        <li><strong>Photon Networking:</strong> Integrated multiplayer networking to enable seamless online gameplay with other players in real time.</li>
                     </ul>
                 </section>
 
