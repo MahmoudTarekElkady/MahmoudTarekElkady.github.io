@@ -4745,4 +4745,37 @@ input, select, textarea {
 			visibility: visible;
 		}
 
-	}
+	}/* CUSTOM MODERN AESTHETICS */
+
+/* Project Card Hover Animation */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+}
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+/* Glassmorphism Navigation */
+#nav {
+    background-color: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+body.is-preload #nav {
+    background-color: transparent !important;
+}
+
+/* Dark mode overrides if needed */
+@media (prefers-color-scheme: dark) {
+    #nav {
+        background-color: rgba(30, 30, 30, 0.85) !important;
+    }
+    .project-card:hover {
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    }
+}
