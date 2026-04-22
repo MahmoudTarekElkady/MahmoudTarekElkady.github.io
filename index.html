@@ -32,6 +32,7 @@
 				<li><a href="#projects">Projects</a></li>
 				<li><a href="#skills">Skills</a></li>
 				<li><a href="#footer">Contact</a></li>
+				<li class="hire-me-nav-item"><a href="#footer" class="glowing-btn">Hire Me</a></li>
 			</ul>
 			<ul class="icons">
 				<li><a href="https://www.linkedin.com/in/mahmoudelkady/" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
@@ -65,7 +66,7 @@
 
 		<section id="projects" class="posts">
 			<!-- CST Walkthrough -->
-			<article class="project-card">
+			<article class="project-card reveal">
 				<header>
 					<span class="date">August 2025</span>
 					<h2><a href="cst_walkthrough.html">Clinical Simulator<br />Training XR</a></h2>
@@ -82,7 +83,7 @@
 			</article>
 
 			<!-- Asthma First Aid -->
-			<article class="project-card">
+			<article class="project-card reveal">
 				<header>
 					<span class="date">May 2025</span>
 					<h2><a href="asthma_first_aid.html">Asthma Attack<br />First Aid VR</a></h2>
@@ -99,7 +100,7 @@
 			</article>
 
 			<!-- Altitude Sickness -->
-			<article class="project-card">
+			<article class="project-card reveal">
 				<header>
 					<span class="date">March 2025</span>
 					<h2><a href="altitude_sickness.html">Altitude Sickness<br />VR Simulation</a></h2>
@@ -116,7 +117,7 @@
 			</article>
 
 			<!-- HyperLoop -->
-			<article class="project-card">
+			<article class="project-card reveal">
 				<header>
 					<span class="date">December 2024</span>
 					<h2><a href="hyperloop.html">HyperLoop<br />VR Experience</a></h2>
@@ -131,7 +132,7 @@
 			</article>
 
 			<!-- Latest Project -->
-			<article class="project-card">
+			<article class="project-card reveal">
 				<header>
 					<span class="date">September 2024</span>
 					<h2><a href="xr_stf.html">XR Game Experience - STF<br />with Unity</a></h2>
@@ -147,7 +148,7 @@
 			</article>
 
 			<!-- Farm Invader -->
-			<article class="project-card">
+			<article class="project-card reveal">
 				<header>
 					<span class="date">August 2024</span>
 					<h2><a href="farm_invader.html">Farm Invader<br />with Unity</a></h2>
@@ -163,7 +164,7 @@
 			</article>
 
 			<!-- Toon Tanks -->
-			<article class="project-card">
+			<article class="project-card reveal">
 				<header>
 					<span class="date">January 2024</span>
 					<h2><a href="toon_tanks.html">Toon Tanks<br />Tank Combat Game</a></h2>
@@ -179,7 +180,7 @@
 			</article>
 
 			<!-- Shooter Demo -->
-			<article class="project-card">
+			<article class="project-card reveal">
 				<header>
 					<span class="date">December 2023</span>
 					<h2><a href="Shooter_demo.html">Demo Shooter Game<br />with Unreal Engine</a></h2>
@@ -195,7 +196,7 @@
 			</article>
 
 			<!-- Obstacle Assault -->
-			<article class="project-card">
+			<article class="project-card reveal">
 				<header>
 					<span class="date">June 2023</span>
 					<h2><a href="obstacle_assault.html">Obstacle Assault<br />Game</a></h2>
@@ -211,7 +212,7 @@
 			</article>
 
 			<!-- Crypt Raider -->
-			<article class="project-card">
+			<article class="project-card reveal">
 				<header>
 					<span class="date">March 2023</span>
 					<h2><a href="crypt_raider.html">Crypt Raider<br />Puzzle Adventure</a></h2>
@@ -227,7 +228,7 @@
 			</article>
 
 			<!-- Undead Hell -->
-			<article class="project-card">
+			<article class="project-card reveal">
 				<header>
 					<span class="date">November 2022</span>
 					<h2><a href="undead_hell.html">Undead Hell Survival Game</a></h2>
@@ -245,21 +246,21 @@
 
 
 		<!-- Skills Section -->
-		<section id="skills">
-			<header>
+		<section id="skills" class="reveal">
+			<header class="reveal">
 				<h2>Skills</h2>
 				<p>Here are some of the key skills I've developed throughout my journey in game development:</p>
 			</header>
-			<ul class="skills-list">
-				<li>Proficient in Unity and Unreal Engine</li>
-				<li>Experience with C# and C++ programming</li>
-				<li>Knowledge of game design principles and mechanics</li>
-				<li>Familiarity with version control systems (Git)</li>
-				<li>Understanding of XR technologies and development</li>
-				<li>Strong problem-solving and debugging skills</li>
-				<li>Ability to collaborate effectively in team environments</li>
-				<li>Adaptability to new tools and technologies</li>
-			</ul>
+			<div class="skill-grid reveal">
+				<div class="skill-badge">Unity Engine</div>
+				<div class="skill-badge">Unreal Engine</div>
+				<div class="skill-badge">C# & C++</div>
+				<div class="skill-badge">XR / VR / AR Development</div>
+				<div class="skill-badge">Game Design & Mechanics</div>
+				<div class="skill-badge">Version Control (Git)</div>
+				<div class="skill-badge">Performance Optimization</div>
+				<div class="skill-badge">Agile Collaboration</div>
+			</div>
 		</section>
 	</div>
 
@@ -300,5 +301,20 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 
+	<script>
+		// Reveal Animations
+		document.addEventListener("DOMContentLoaded", function() {
+			const reveals = document.querySelectorAll(".reveal");
+			const revealOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+			const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+				entries.forEach(entry => {
+					if (!entry.isIntersecting) return;
+					entry.target.classList.add("active");
+					observer.unobserve(entry.target);
+				});
+			}, revealOptions);
+			reveals.forEach(reveal => revealOnScroll.observe(reveal));
+		});
+	</script>
 </body>
 </html>
