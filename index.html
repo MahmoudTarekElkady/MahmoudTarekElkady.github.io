@@ -4,6 +4,7 @@
 	<title>Mahmoud Elkady | Game Developer Portfolio</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="icon" type="image/png" href="images/favicon.png">
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
@@ -21,6 +22,9 @@
 				<div class="info">
 					<h2>Mahmoud Elkady | Game Developer</h2>
 					<p>Specializing in Unity, Unreal, and XR development. Explore my journey in creating immersive gameplay experiences.</p>
+					<ul class="actions">
+						<li><a href="assets/cv/Elkady_Resume.pdf" class="button primary icon solid fa-download" target="_blank" download>Download Resume</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -36,8 +40,7 @@
 			</ul>
 			<ul class="icons">
 				<li><a href="https://www.linkedin.com/in/mahmoudelkady/" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-				<li><a href="https://github.com/hoodaa" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-				<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="https://github.com/MahmoudTarekElkady" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
 			</ul>
 		</nav>
 
@@ -65,8 +68,13 @@
 
 
 		<section id="projects" class="posts">
+			<div class="project-filters reveal" style="width: 100%; text-align: center; margin-bottom: 40px; border-bottom: 2px solid rgba(255, 255, 255, 0.1); padding-bottom: 20px;">
+				<button class="filter-btn active" data-filter="all">All Projects</button>
+				<button class="filter-btn" data-filter="unity">Unity Engine</button>
+				<button class="filter-btn" data-filter="unreal">Unreal Engine</button>
+			</div>
 			<!-- CST Walkthrough -->
-			<article class="project-card reveal">
+			<article class="project-card reveal" data-category="vr unity">
 				<header>
 					<span class="date">August 2025</span>
 					<h2><a href="cst_walkthrough.html">Clinical Simulator<br />Training XR</a></h2>
@@ -83,7 +91,7 @@
 			</article>
 
 			<!-- Asthma First Aid -->
-			<article class="project-card reveal">
+			<article class="project-card reveal" data-category="vr unity">
 				<header>
 					<span class="date">May 2025</span>
 					<h2><a href="asthma_first_aid.html">Asthma Attack<br />First Aid VR</a></h2>
@@ -100,7 +108,7 @@
 			</article>
 
 			<!-- Altitude Sickness -->
-			<article class="project-card reveal">
+			<article class="project-card reveal" data-category="vr unity">
 				<header>
 					<span class="date">March 2025</span>
 					<h2><a href="altitude_sickness.html">Altitude Sickness<br />VR Simulation</a></h2>
@@ -117,7 +125,7 @@
 			</article>
 
 			<!-- HyperLoop -->
-			<article class="project-card reveal">
+			<article class="project-card reveal" data-category="vr unity">
 				<header>
 					<span class="date">December 2024</span>
 					<h2><a href="hyperloop.html">HyperLoop<br />VR Experience</a></h2>
@@ -132,7 +140,7 @@
 			</article>
 
 			<!-- Latest Project -->
-			<article class="project-card reveal">
+			<article class="project-card reveal" data-category="vr unity">
 				<header>
 					<span class="date">September 2024</span>
 					<h2><a href="xr_stf.html">XR Game Experience - STF<br />with Unity</a></h2>
@@ -148,7 +156,7 @@
 			</article>
 
 			<!-- Farm Invader -->
-			<article class="project-card reveal">
+			<article class="project-card reveal" data-category="unity">
 				<header>
 					<span class="date">August 2024</span>
 					<h2><a href="farm_invader.html">Farm Invader<br />with Unity</a></h2>
@@ -164,7 +172,7 @@
 			</article>
 
 			<!-- Toon Tanks -->
-			<article class="project-card reveal">
+			<article class="project-card reveal" data-category="unreal">
 				<header>
 					<span class="date">January 2024</span>
 					<h2><a href="toon_tanks.html">Toon Tanks<br />Tank Combat Game</a></h2>
@@ -180,7 +188,7 @@
 			</article>
 
 			<!-- Shooter Demo -->
-			<article class="project-card reveal">
+			<article class="project-card reveal" data-category="unreal">
 				<header>
 					<span class="date">December 2023</span>
 					<h2><a href="Shooter_demo.html">Demo Shooter Game<br />with Unreal Engine</a></h2>
@@ -196,7 +204,7 @@
 			</article>
 
 			<!-- Obstacle Assault -->
-			<article class="project-card reveal">
+			<article class="project-card reveal" data-category="unreal">
 				<header>
 					<span class="date">June 2023</span>
 					<h2><a href="obstacle_assault.html">Obstacle Assault<br />Game</a></h2>
@@ -212,7 +220,7 @@
 			</article>
 
 			<!-- Crypt Raider -->
-			<article class="project-card reveal">
+			<article class="project-card reveal" data-category="unreal">
 				<header>
 					<span class="date">March 2023</span>
 					<h2><a href="crypt_raider.html">Crypt Raider<br />Puzzle Adventure</a></h2>
@@ -228,7 +236,7 @@
 			</article>
 
 			<!-- Undead Hell -->
-			<article class="project-card reveal">
+			<article class="project-card reveal" data-category="unreal">
 				<header>
 					<span class="date">November 2022</span>
 					<h2><a href="undead_hell.html">Undead Hell Survival Game</a></h2>
@@ -278,6 +286,7 @@
 				<section>
 					<h3>Social</h3>
 					<ul class="icons alt">
+						<li><a href="assets/cv/Elkady_Resume.pdf" class="icon solid alt fa-file-pdf" target="_blank" download><span class="label">Resume</span></a></li>
 						<li><a href="https://www.facebook.com/Mahmoud.Tarek.ElKady/" class="icon brands alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
 						<li><a href="https://www.linkedin.com/in/mahmoudelkady/" class="icon brands alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
 						<li><a href="https://github.com/MahmoudTarekElkady" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
@@ -302,8 +311,9 @@
 	<script src="assets/js/main.js"></script>
 
 	<script>
-		// Reveal Animations
+		// Reveal Animations & Filter Logic
 		document.addEventListener("DOMContentLoaded", function() {
+			// Reveals
 			const reveals = document.querySelectorAll(".reveal");
 			const revealOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
 			const revealOnScroll = new IntersectionObserver(function(entries, observer) {
@@ -314,6 +324,28 @@
 				});
 			}, revealOptions);
 			reveals.forEach(reveal => revealOnScroll.observe(reveal));
+
+			// Filters
+			const filterBtns = document.querySelectorAll(".filter-btn");
+			const projects = document.querySelectorAll(".project-card");
+
+			filterBtns.forEach(btn => {
+				btn.addEventListener("click", () => {
+					filterBtns.forEach(b => b.classList.remove("active"));
+					btn.classList.add("active");
+					const category = btn.getAttribute("data-filter");
+
+					projects.forEach(project => {
+						if (category === "all" || project.getAttribute("data-category").includes(category)) {
+							project.style.display = "";
+							setTimeout(() => project.classList.add("active"), 50);
+						} else {
+							project.style.display = "none";
+							project.classList.remove("active");
+						}
+					});
+				});
+			});
 		});
 	</script>
 </body>
