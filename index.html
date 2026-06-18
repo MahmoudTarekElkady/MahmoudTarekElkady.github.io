@@ -1,9 +1,17 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>Mahmoud Elkady | Game Developer Portfolio</title>
+	<title>Mahmoud Elkady | Gameplay & XR Systems Engineer</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="Portfolio of Mahmoud Elkady — Gameplay & XR Systems Engineer specializing in Unity, Unreal Engine, and immersive XR development." />
+	<meta property="og:title" content="Mahmoud Elkady | Gameplay & XR Systems Engineer" />
+	<meta property="og:description" content="Explore my game development projects, XR simulations, and published research." />
+	<meta property="og:url" content="https://mahmoudtarekelkady.github.io/" />
+	<meta property="og:type" content="website" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Mahmoud Elkady | Gameplay & XR Systems Engineer" />
+	<meta name="twitter:description" content="Explore my game development projects, XR simulations, and published research." />
 	<link rel="icon" type="image/png" href="images/favicon.png">
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -20,8 +28,8 @@
 					<img src="images/Me.jpg" alt="Mahmoud Elkady">
 				</div>
 				<div class="info">
-					<h2>Mahmoud Elkady | Game Developer</h2>
-					<p>Specializing in Unity, Unreal, and XR development. Explore my journey in creating immersive gameplay experiences.</p>
+					<h2>Mahmoud Elkady | Gameplay & XR Systems Engineer</h2>
+					<p>Architecting immersive gameplay systems and XR experiences with Unity, Unreal Engine, and cutting-edge interactive technologies.</p>
 					<ul class="actions">
 						<li><a href="assets/cv/Elkady_Resume.pdf" class="button primary icon solid fa-download" target="_blank" download>Download Resume</a></li>
 					</ul>
@@ -35,6 +43,7 @@
 				<li class="active"><a href="index.html">Home</a></li>
 				<li><a href="#projects">Projects</a></li>
 				<li><a href="#skills">Skills</a></li>
+				<li><a href="#esports">Esports</a></li>
 				<li><a href="#footer">Contact</a></li>
 				<li class="hire-me-nav-item"><a href="#footer" class="glowing-btn">Hire Me</a></li>
 			</ul>
@@ -56,7 +65,9 @@
 				<!-- YouTube Video -->
 				<div class="video">
 					<h3>Watch Gameplay Demo</h3>
-					<iframe width="650" height="350" src="https://www.youtube.com/embed/PEIZfWQPWg8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<div class="video-wrapper">
+						<iframe width="650" height="350" src="https://www.youtube.com/embed/PEIZfWQPWg8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" title="MMORPG Gameplay Demo"></iframe>
+					</div>
 				</div>
 				<br />
 				<ul class="actions special">
@@ -68,9 +79,9 @@
 
 		<section id="projects" class="posts">
 			<div class="project-filters reveal" style="width: 100%; text-align: center; margin-bottom: 40px; border-bottom: 2px solid rgba(255, 255, 255, 0.1); padding-bottom: 20px;">
-				<button class="filter-btn active" data-filter="all">All Projects</button>
-				<button class="filter-btn" data-filter="unity">Unity Engine</button>
-				<button class="filter-btn" data-filter="unreal">Unreal Engine</button>
+				<button class="filter-btn active" data-filter="all" aria-label="Show all projects">All Projects</button>
+				<button class="filter-btn" data-filter="unity" aria-label="Filter by Unity Engine projects">Unity Engine</button>
+				<button class="filter-btn" data-filter="unreal" aria-label="Filter by Unreal Engine projects">Unreal Engine</button>
 			</div>
 			<!-- CST Walkthrough -->
 			<article class="project-card reveal" data-category="vr unity">
@@ -79,7 +90,7 @@
 					<h2><a href="cst_walkthrough.html">Clinical Simulator<br />Training XR</a></h2>
 				</header>
 				<div class="video">
-					<video width="400" height="300" controls preload="metadata" style="border-radius: 8px;">
+					<video controls preload="metadata" style="border-radius: 8px; width: 100%; max-width: 400px; height: auto;">
 						<source src="assets/videos/cst_walkthrough.mp4" type="video/mp4">
 					</video>
 				</div>
@@ -96,7 +107,7 @@
 					<h2><a href="asthma_first_aid.html">Asthma Attack<br />First Aid VR</a></h2>
 				</header>
 				<div class="video">
-					<video width="400" height="300" controls preload="metadata" style="border-radius: 8px;">
+					<video controls preload="metadata" style="border-radius: 8px; width: 100%; max-width: 400px; height: auto;">
 						<source src="assets/videos/asthma_first_aid.mp4" type="video/mp4">
 					</video>
 				</div>
@@ -113,7 +124,7 @@
 					<h2><a href="altitude_sickness.html">Altitude Sickness<br />VR Simulation</a></h2>
 				</header>
 				<div class="video">
-					<video width="400" height="300" controls preload="metadata" style="border-radius: 8px;">
+					<video controls preload="metadata" style="border-radius: 8px; width: 100%; max-width: 400px; height: auto;">
 						<source src="assets/videos/altitude_sickness.mp4" type="video/mp4">
 					</video>
 				</div>
@@ -130,7 +141,9 @@
 					<h2><a href="hyperloop.html">HyperLoop<br />VR Experience</a></h2>
 				</header>
 				<div class="video">
-					<iframe width="400" height="300" src="https://www.youtube.com/embed/v8_OffwUEtY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" style="border-radius: 8px;"></iframe>
+					<div class="video-wrapper video-wrapper--card">
+						<iframe width="400" height="300" src="https://www.youtube.com/embed/v8_OffwUEtY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" title="HyperLoop VR Demo" style="border-radius: 8px;"></iframe>
+					</div>
 				</div>
 				<p>A futuristic high-speed transit simulation featuring advanced environments and XR interactions.</p>
 				<ul class="actions special">
@@ -146,7 +159,9 @@
 				</header>
 				<div class="video">
 					<h3>Watch STF Demo</h3>
-					<iframe width="400" height="300" src="https://www.youtube.com/embed/_eWbWZCt6wA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+					<div class="video-wrapper video-wrapper--card">
+						<iframe width="400" height="300" src="https://www.youtube.com/embed/_eWbWZCt6wA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" title="XR STF Demo"></iframe>
+					</div>
 				</div>
 				<p>Explore how XR technology is used to simulate trips and falls, helping to raise awareness of safety in various environments.</p>
 				<ul class="actions special">
@@ -162,7 +177,9 @@
 				</header>
 				<div class="video">
 					<h3>Watch Gameplay Demo</h3>
-					<iframe width="400" height="300" src="https://www.youtube.com/embed/yFyBvnGsO5I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+					<div class="video-wrapper video-wrapper--card">
+						<iframe width="400" height="300" src="https://www.youtube.com/embed/yFyBvnGsO5I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" title="Farm Invaders Gameplay"></iframe>
+					</div>
 				</div>
 				<p>Defend your farm from waves of alien invaders in this fast-paced, action-packed tower defense game.</p>
 				<ul class="actions special">
@@ -178,7 +195,9 @@
 				</header>
 				<div class="video">
 					<h3>Watch Gameplay Demo</h3>
-					<iframe width="400" height="300" src="https://www.youtube.com/embed/wDG0hBJbf9I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+					<div class="video-wrapper video-wrapper--card">
+						<iframe width="400" height="300" src="https://www.youtube.com/embed/wDG0hBJbf9I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" title="Toon Tanks Gameplay"></iframe>
+					</div>
 				</div>
 				<p>Command a tank to destroy enemy towers while dodging incoming attacks in this action-packed game built with Unreal Engine.</p>
 				<ul class="actions special">
@@ -194,7 +213,9 @@
 				</header>
 				<div class="video">
 					<h3>Watch Gameplay Demo</h3>
-					<iframe width="400" height="300" src="https://www.youtube.com/embed/RsitVGzU8Gc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+					<div class="video-wrapper video-wrapper--card">
+						<iframe width="400" height="300" src="https://www.youtube.com/embed/RsitVGzU8Gc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" title="Shooter Demo Gameplay"></iframe>
+					</div>
 				</div>
 				<p>Experience fast-paced action in this shooter demo developed with Unreal Engine, featuring advanced AI mechanics and immersive environments.</p>
 				<ul class="actions special">
@@ -210,7 +231,9 @@
 				</header>
 				<div class="video">
 					<h3>Watch Gameplay Demo</h3>
-					<iframe width="400" height="300" src="https://www.youtube.com/embed/ubRvldWaY0k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+					<div class="video-wrapper video-wrapper--card">
+						<iframe width="400" height="300" src="https://www.youtube.com/embed/ubRvldWaY0k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" title="Obstacle Assault Gameplay"></iframe>
+					</div>
 				</div>
 				<p>Dodge obstacles and overcome platform challenges in this action-packed game built with engaging levels and unique mechanics.</p>
 				<ul class="actions special">
@@ -226,7 +249,9 @@
 				</header>
 				<div class="video">
 					<h3>Watch Gameplay Demo</h3>
-					<iframe width="400" height="300" src="https://www.youtube.com/embed/8cT3NJBmz3Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+					<div class="video-wrapper video-wrapper--card">
+						<iframe width="400" height="300" src="https://www.youtube.com/embed/8cT3NJBmz3Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" title="Crypt Raider Gameplay"></iframe>
+					</div>
 				</div>
 				<p>Navigate through a puzzling dungeon to uncover treasure and escape the crypt in this thrilling game developed with Unreal Engine.</p>
 				<ul class="actions special">
@@ -242,7 +267,9 @@
 				</header>
 				<div class="video">
 					<h3>Watch Gameplay Demo</h3>
-					<iframe width="400" height="300" src="https://www.youtube.com/embed/uNyuViynU88" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+					<div class="video-wrapper video-wrapper--card">
+						<iframe width="400" height="300" src="https://www.youtube.com/embed/uNyuViynU88" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" title="Undead Hell Gameplay"></iframe>
+					</div>
 				</div>
 				<p>Survive waves of undead enemies in this thrilling survival game featuring challenging combat mechanics and immersive environments.</p>
 				<ul class="actions special">
@@ -267,6 +294,31 @@
 				<div class="skill-badge">Version Control (Git)</div>
 				<div class="skill-badge">Performance Optimization</div>
 				<div class="skill-badge">Agile Collaboration</div>
+			</div>
+		</section>
+
+		<!-- Esports & Competitive Background -->
+		<section id="esports" class="reveal">
+			<header class="reveal">
+				<h2>Esports & Competitive Background</h2>
+				<p>Professional competitive gaming experience that directly informs my approach to gameplay systems and combat design.</p>
+			</header>
+			<div class="esports-grid reveal">
+				<div class="esports-card">
+					<div class="esports-card-icon">🏆</div>
+					<h3>Professional Athlete</h3>
+					<p>Competed in League of Legends at the highest regional tiers — Team Wild Panthers in the Greek League (2018) and Team Anubis in the Egyptian League (2019).</p>
+				</div>
+				<div class="esports-card">
+					<div class="esports-card-icon">🎮</div>
+					<h3>Applied Game Knowledge</h3>
+					<p>Deep mechanical fluency in frame data, animation-canceling systems, tick-rate boundaries, and micro-positioning — directly applied to modern gameplay systems and combat design.</p>
+				</div>
+				<div class="esports-card">
+					<div class="esports-card-icon">📋</div>
+					<h3>Coach & Organizer</h3>
+					<p>E-Sports Coach at Sky Coach (2019-2020). Organized coding tournaments, gaming panel events, and competitive showcases with Gamers Legacy Club at MIU (2018-2021).</p>
+				</div>
 			</div>
 		</section>
 	</div>
@@ -297,7 +349,7 @@
 		<!-- Copyright -->
 		<div id="copyright">
 			<ul>
-				<li>&copy; 2024 Mahmoud Elkady. All rights reserved.</li>
+				<li>&copy; 2025 Mahmoud Elkady. All rights reserved.</li>
 			</ul>
 		</div>
 
