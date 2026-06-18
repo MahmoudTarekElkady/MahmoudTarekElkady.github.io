@@ -65,7 +65,7 @@
 				<!-- YouTube Video -->
 				<div class="video">
 					<h3>Watch Gameplay Demo</h3>
-					<div class="video-wrapper">
+					<div class="video-wrapper video-wrapper--featured">
 						<iframe width="650" height="350" src="https://www.youtube.com/embed/PEIZfWQPWg8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" title="MMORPG Gameplay Demo"></iframe>
 					</div>
 				</div>
@@ -76,13 +76,17 @@
 				</ul>
 			</article>
 
-
-		<section id="projects" class="posts">
-			<div class="project-filters reveal" style="width: 100%; text-align: center; margin-bottom: 40px; border-bottom: 2px solid rgba(255, 255, 255, 0.1); padding-bottom: 20px;">
+		<!-- Projects Filter Section -->
+		<section id="projects" class="reveal" style="padding-bottom: 0;">
+			<div class="project-filters" style="width: 100%; text-align: center; border-bottom: 2px solid rgba(33, 41, 49, 0.1); padding-bottom: 20px; margin-bottom: 0;">
 				<button class="filter-btn active" data-filter="all" aria-label="Show all projects">All Projects</button>
 				<button class="filter-btn" data-filter="unity" aria-label="Filter by Unity Engine projects">Unity Engine</button>
 				<button class="filter-btn" data-filter="unreal" aria-label="Filter by Unreal Engine projects">Unreal Engine</button>
 			</div>
+		</section>
+
+		<!-- Projects Grid Section -->
+		<section class="posts" style="border-top: 0; padding-top: 2rem;">
 			<!-- CST Walkthrough -->
 			<article class="project-card reveal" data-category="vr unity">
 				<header>

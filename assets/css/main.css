@@ -4790,20 +4790,20 @@ body.is-preload #nav {
     margin-top: 20px;
 }
 .skill-badge {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(33, 41, 49, 0.03);
+    border: 1px solid rgba(33, 41, 49, 0.1);
+    color: rgba(33, 41, 49, 0.8);
     padding: 10px 20px;
     border-radius: 30px;
     font-weight: 600;
     transition: all 0.3s ease;
-    backdrop-filter: blur(5px);
     cursor: default;
 }
 .skill-badge:hover {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(24, 210, 110, 0.08);
     border-color: #18d26e;
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(24, 210, 110, 0.2);
+    box-shadow: 0 5px 15px rgba(24, 210, 110, 0.15);
     color: #18d26e;
 }
 
@@ -4891,24 +4891,26 @@ body.is-preload #nav {
 /* PROJECT FILTERS */
 .filter-btn {
     background: transparent;
-    color: rgba(255, 255, 255, 0.5);
-    border: none;
+    color: rgba(33, 41, 49, 0.6);
+    border: 1px solid rgba(33, 41, 49, 0.15);
     font-size: 0.9rem;
     font-weight: 600;
-    margin: 0 10px;
-    padding: 8px 15px;
+    margin: 5px 10px;
+    padding: 8px 20px;
     cursor: pointer;
     border-radius: 20px;
     transition: all 0.3s ease;
 }
 .filter-btn:hover {
-    color: #fff;
-    background: rgba(255, 255, 255, 0.1);
+    color: #18d26e;
+    border-color: #18d26e;
+    background: rgba(24, 210, 110, 0.05);
 }
 .filter-btn.active {
-    color: #18d26e;
-    background: rgba(24, 210, 110, 0.1);
-    box-shadow: 0 0 10px rgba(24, 210, 110, 0.2);
+    color: #fff;
+    background: #18d26e;
+    border-color: #18d26e;
+    box-shadow: 0 4px 12px rgba(24, 210, 110, 0.25);
 }
 
 /* RESPONSIVE VIDEO WRAPPER */
@@ -4919,6 +4921,7 @@ body.is-preload #nav {
     overflow: hidden;
     max-width: 100%;
     border-radius: 8px;
+    margin: 0 auto 1.5rem;
 }
 .video-wrapper iframe {
     position: absolute;
@@ -4931,11 +4934,16 @@ body.is-preload #nav {
 .video-wrapper--card {
     max-width: 400px;
 }
+.video-wrapper--featured {
+    max-width: 650px;
+}
 
-/* Ensure native video elements are responsive */
+/* Ensure native video elements are responsive and centered */
 .video video {
+    display: block;
     max-width: 100%;
     height: auto;
+    margin: 0 auto;
 }
 
 /* ESPORTS SECTION */
@@ -4961,18 +4969,17 @@ body.is-preload #nav {
     margin: 0 auto;
 }
 .esports-card {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(33, 41, 49, 0.02);
+    border: 1px solid rgba(33, 41, 49, 0.08);
     border-radius: 12px;
     padding: 30px 25px;
     transition: all 0.35s ease;
-    backdrop-filter: blur(5px);
 }
 .esports-card:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(24, 210, 110, 0.3);
+    background: rgba(33, 41, 49, 0.04);
+    border-color: rgba(24, 210, 110, 0.4);
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(24, 210, 110, 0.12);
+    box-shadow: 0 10px 30px rgba(24, 210, 110, 0.08);
 }
 .esports-card-icon {
     font-size: 2.5em;
@@ -4988,5 +4995,5 @@ body.is-preload #nav {
     font-size: 0.9rem;
     text-align: center;
     line-height: 1.8;
-    opacity: 0.85;
+    color: rgba(33, 41, 49, 0.85);
 }
