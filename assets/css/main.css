@@ -4921,7 +4921,7 @@ body.is-preload #nav {
     overflow: hidden;
     max-width: 100%;
     border-radius: 8px;
-    margin: 0 auto 1.5rem;
+    margin: 0 auto 1.5rem !important;
 }
 .video-wrapper iframe,
 .video-wrapper video {
@@ -4939,9 +4939,11 @@ body.is-preload #nav {
 }
 .video-wrapper--card {
     max-width: 400px;
+    margin: 0 auto 1.5rem !important;
 }
 .video-wrapper--featured {
     max-width: 650px;
+    margin: 0 auto 2rem !important;
 }
 
 /* Ensure native video elements outside wrappers are responsive and centered */
