@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>TVTC VR Electrical Safety Simulator | Mahmoud Elkady</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        .video-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        @media screen and (max-width: 840px) {
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">Back to Portfolio</a>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+            <article class="post featured">
+                <header class="major">
+                    <h1>TVTC VR Electrical Safety<br />Simulator</h1>
+                    <p>An interactive, localized Virtual Reality simulation designed for high-voltage electrical safety training.</p>
+                </header>
+
+                <!-- YouTube Videos Grid -->
+                <div class="video-grid">
+                    <div class="video-item">
+                        <h3 style="text-align: center; margin-bottom: 1rem;">English Version Walkthrough</h3>
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/KrfYV44XzUc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <h3 style="text-align: center; margin-bottom: 1rem;">Arabic Version Walkthrough</h3>
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/PD42HpxFe8Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <section>
+                    <h2>Details</h2>
+                    <p>Developed for the <strong>Technical and Vocational Training Corporation (TVTC)</strong>, this immersive VR simulator is designed to guide students and electrical technicians through safety training and panel operations in a completely risk-free virtual environment.</p>
+                    
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li><strong>AI Assistant Robot Guide:</strong> Features a fully animated assistant robot that dynamically instructs the player, points out targets, and gives real-time visual and audio feedback.</li>
+                        <li><strong>High-Fidelity Hand Interactions:</strong> Integrated realistic physics-based controller interactions for electrical wiring, flipping heavy breakers, and fitting fuses.</li>
+                        <li><strong>Bilingual Localization:</strong> Full translation and voiceover localization in both <strong>Arabic</strong> and <strong>English</strong>.</li>
+                        <li><strong>Safety Protocol Enforcement:</strong> Evaluates the user's adherence to safety standards (PPE checks, breaker isolation, voltage testing using meters).</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Tools Used</h2>
+                    <ul>
+                        <li><strong>Unity Engine</strong> (Game Engine)</li>
+                        <li><strong>XR Interaction Toolkit & OpenXR</strong> (VR Interaction Framework)</li>
+                        <li><strong>C# Scripting</strong> (Systems Architecture, Localization & State Machine Logic)</li>
+                    </ul>
+                </section>
+            </article>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <p>&copy; 2026 Mahmoud Elkady. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
