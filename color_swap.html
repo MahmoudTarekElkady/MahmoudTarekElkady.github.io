@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Color Swap Mobile Puzzle Game | Mahmoud Elkady</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        .video-container {
+            max-width: 480px; /* Restrict width to mimic portrait mobile screens */
+            margin: 0 auto 2rem auto;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 177.78%; /* 9:16 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">Back to Portfolio</a>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+            <article class="post featured">
+                <header class="major">
+                    <h1>Color Swap Mobile Puzzle Game</h1>
+                    <p>A portrait-oriented mobile puzzle game built in Unity involving color swaps and graph theory constraints.</p>
+                </header>
+
+                <!-- YouTube Embedded Portrait Video -->
+                <div class="video-container">
+                    <h3 style="text-align: center; margin-bottom: 1rem;">Gameplay Demo</h3>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/u7FlXagjpb0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <section>
+                    <h2>Details</h2>
+                    <p>Color Swap is a clean, minimal puzzle game where players swap node colors on a graph to solve connection conflicts. The rule is simple: <strong>no two connected nodes may share the same color</strong>.</p>
+                    
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li><strong>Tactile Mechanics:</strong> Responsive drag-and-drop controller allowing users to grab and swap node positions.</li>
+                        <li><strong>Graph Coloring Validation:</strong> Lightweight state machine validation algorithm tracking the states of connected edges. Conflict lines dynamically highlight in red.</li>
+                        <li><strong>Dynamic Board Generation:</strong> Levels generate dynamically at runtime using modular ScriptableObject data files.</li>
+                        <li><strong>DOTween Animations:</strong> Smooth animations built for node grabs, snaps, target moves, and victory screens.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Tools Used</h2>
+                    <ul>
+                        <li><strong>Unity Engine</strong></li>
+                        <li><strong>C# Scripting</strong> (Systems & Graph Logic)</li>
+                        <li><strong>DOTween</strong> (UI Animations & Motion Layouts)</li>
+                    </ul>
+                </section>
+            </article>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <p>&copy; 2026 Mahmoud Elkady. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
