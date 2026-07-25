@@ -1,0 +1,76 @@
+
+--- PAGE 1 ---
+Mahmoud Tarek Elkady
+(+20)1159194477 | mahmoudelkadymk@gmail.com I Portfolio I GitHub I LinkedIn
+Work Experience:
+XR Developer at Merse (January 2024 - Present)
+o
+o
+o
+o
+o
+Developed immersive XR experiences using Unity3D and specialized XR tools(Auto Hand - XR Interaction ToolKit)
+Collaborated with multidisciplinary teams to design and implement XR solutions for training simulations.
+Utilized cutting-edge XR technologies to enhance interactive storytelling and user experience design.
+Developed reusable time system to replace Unity's time system such as coroutines for better control and optimization
+Conducted user testing and gathered feedback to iterate on XR experiences and optimize performance.
+Part-time Senior XR Engineer at Bluebell (January 2026 - Present)
+Designed and implemented advanced XR systems utilizing Unity3D, ensuring high-performance interactive experiences
+o
+o Engineered reusable interaction mechanics and leveraged cutting-edge XR tools to streamline the development pipeline.
+Collaborated with cross-functional teams to architect and deliver scalable solutions for complex simulations
+o
+Game Developer at Ekson Almotahida Education Group (Apr 2023 - January 2024)
+Designed and developed educational simulations and mini-games from concept to implementation for scientific virtual labs.
+o
+Developed interactive simulations from scratch, and enhanced learning experiences through innovative game-based solutions
+o
+using Unity and Unreal engine.
+Game Development Instructor at SIMPLIFE & GOMYCODE (April 2023 - January 2024)
+Created comprehensive 2D/3D development curriculums covering game design, Unity scripting, and AR/VR integration.
+o
+Mentored students through collaborative hands-on projects from initial ideation to final deployment.
+o
+Education:
+e Postgraduate Diploma in Game Development (Oct 2021 - Jan 2022) - Information Technology Institute (ITI)
+Bachelor's Degree in Computer Science (2017 - 2021) - Misr International University (MIU)
+o Implemented Deep Reinforcement Learning techniques in AR games to enhance user engagement and NPC behavior in
+Published in IEEE - (Dec 2020 - May 2021)
+augmented reality games.
+Technical Skills:
+• Programming Languages: C# - C++ - Python - Java - JavaScript.
+e Technologies: Unity - Unreal Engine - Game Maker Studio - OpenGL - WebGL - Phaser.
+Concepts: OOP - ECS - MVC - Data Structures - Algorithms - Linear Algebra - Debugging.
+Version Control & Collaboration: Git - Jira - Confluence - Notion.
+Notable Projects:
+Augmented Reality Multiplayer RPG (Unity C#) - (Graduation project)
+Developed an AR Multiplayer RPG with Unity and Google's AR APIs. (AR-Foundation, AR Core & AR Kit)
+o
+Utilized Deep Reinforcement Learning for humanlike NPC behavior.
+o
+o Implemented network functionality using Mirror Networking API.
+2D MMORPG (Unity
+ove
+Developed a 2D MMORPG with player mechanics and designed NPC monster Al with a comprehensive spawning system.
+o
+Ensured full network synchronization using Unity's Mirror Networking API.
+o
+Farm Invaders (Unity C#)
+Developed "Farm Invaders" using Unity and C# within a 2-day game jam, creating a 2D Survival Game.
+o
+o Implemented a farming system, shooting mechanics with multiple weapons, a purchase system, and a wave spawning system.
+Fingerprint Recognition (Python)
+An Image Processing project developed using Python that takes an input image from the user and compares it with a
+o
+bench-marked dataset using image recognition techniques.
+Extracurricular Activities:
+E-Sports Coach at Sky Coach - (Oct 2019 - Mar 2020)
+Coached and interacted with students in the E-sport game League of Legends.
+o
+Pro Player in League of Legends
+Team Wild Panthers in the Greek League (Apr 2018 - Oct 2018).
+o
+o Team Anubis Egyptian League (Aug 2019 - Sep 2019).
+Member of Gamers Legacy Club at MIU (2018 - 2021)
+Organized gaming and coding events in MIU and Egycon.
+o
