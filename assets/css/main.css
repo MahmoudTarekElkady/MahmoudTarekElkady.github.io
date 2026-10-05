@@ -3354,10 +3354,13 @@ input, select, textarea {
 	display: flex;
 	gap: 20px; /* Space between image and info */
 	align-items: center;
+	width: 100%;
+	max-width: 840px;
 }
 
-.image img {
+#intro .image img {
 	width: 300px; /* Adjust the size of the image */
+	max-width: 100%;
 	border-radius: 5px; /* Adds rounded corners to the frame */
 	border: 5px solid rgba(255, 255, 255, 0.075); /* Thicker black border for a frame-like effect */
 	box-shadow: 0 2px 4px rgba(255, 255, 255, 0.075); /* Adds a subtle shadow around the frame */
@@ -3368,6 +3371,7 @@ input, select, textarea {
 
 .info {
 	max-width: 500px;
+	min-width: 0;
 }
 
 
@@ -3544,7 +3548,7 @@ input, select, textarea {
 				}
 
 				#intro .actions {
-					display: none;
+					justify-content: center;
 				}
 
 		}
@@ -4760,7 +4764,7 @@ input, select, textarea {
 
 /* Glassmorphism Navigation */
 #nav {
-    background-color: rgba(255, 255, 255, 0.85) !important;
+    background-color: rgba(33, 41, 49, 0.96) !important;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-top: 1px solid rgba(255, 255, 255, 0.3);
@@ -4809,9 +4813,11 @@ body.is-preload #nav {
 
 /* Scroll Reveal Animations */
 .reveal {
+    transition: all 0.8s ease-out;
+}
+.has-reveal .reveal:not(.active) {
     opacity: 0;
     transform: translateY(30px);
-    transition: all 0.8s ease-out;
 }
 .reveal.active {
     opacity: 1;
@@ -4907,7 +4913,7 @@ body.is-preload #nav {
     background: rgba(24, 210, 110, 0.05);
 }
 .filter-btn.active {
-    color: #fff;
+    color: #123128;
     background: #18d26e;
     border-color: #18d26e;
     box-shadow: 0 4px 12px rgba(24, 210, 110, 0.25);
@@ -4916,8 +4922,8 @@ body.is-preload #nav {
 /* RESPONSIVE VIDEO WRAPPER */
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
+    aspect-ratio: 16 / 9;
+    width: 100%;
     overflow: hidden;
     max-width: 100%;
     border-radius: 8px;
@@ -4945,14 +4951,78 @@ body.is-preload #nav {
     max-width: 650px;
     margin: 0 auto 2rem !important;
 }
+.video-wrapper--portrait {
+    aspect-ratio: 392 / 850;
+    max-width: 240px;
+}
+
+.video > iframe {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+    border: 0;
+}
 
 /* Ensure native video elements outside wrappers are responsive and centered */
-.video video {
+.video > video {
     display: block;
     width: 100%;
     max-width: 650px;
     height: auto;
     margin: 0 auto;
+}
+
+#intro .info h1 {
+    font-size: 1.75rem;
+    line-height: 1.45;
+    margin: 0 0 1.5rem;
+}
+
+@media screen and (max-width: 980px) {
+    #intro .intro-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    #intro .image {
+        width: min(260px, 100%);
+    }
+    #intro .actions {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .esports-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media screen and (max-width: 736px) {
+    #main > .post h1 {
+        font-size: clamp(1.75rem, 7.5vw, 2.5rem);
+        line-height: 1.25;
+        overflow-wrap: anywhere;
+    }
+}
+
+a:focus-visible, button:focus-visible {
+    outline: 3px solid #087b9a !important;
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+    .has-reveal .reveal:not(.active) {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 /* ESPORTS SECTION */

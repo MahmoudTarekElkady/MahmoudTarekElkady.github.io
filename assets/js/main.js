@@ -124,10 +124,11 @@
 		$wrapper._parallax(0.925);
 
 	// Nav Panel.
+	if ($nav.length > 0) {
 
 		// Toggle.
 			$navPanelToggle = $(
-				'<a href="#navPanel" id="navPanelToggle">Menu</a>'
+				'<a href="#navPanel" id="navPanelToggle" aria-label="Menu" aria-controls="navPanel">Menu</a>'
 			)
 				.appendTo($wrapper);
 
@@ -147,13 +148,14 @@
 				'<div id="navPanel">' +
 					'<nav>' +
 					'</nav>' +
-					'<a href="#navPanel" class="close"></a>' +
+					'<a href="#navPanel" class="close" aria-label="Close menu"></a>' +
 				'</div>'
 			)
 				.appendTo($body)
 				.panel({
 					delay: 500,
 					hideOnClick: true,
+					hideOnEscape: true,
 					hideOnSwipe: true,
 					resetScroll: true,
 					resetForms: true,
@@ -195,6 +197,7 @@
 				&&	browser.osVersion < 10)
 					$navPanel
 						.css('transition', 'none');
+	}
 
 	// Intro.
 		var $intro = $('#intro');

@@ -1,14 +1,18 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
 	<title>Mahmoud Elkady | Gameplay & XR Systems Engineer</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="description" content="Portfolio of Mahmoud Elkady — Gameplay & XR Systems Engineer specializing in Unity, Unreal Engine, and immersive XR development." />
 	<meta property="og:title" content="Mahmoud Elkady | Gameplay & XR Systems Engineer" />
 	<meta property="og:description" content="Explore my game development projects, XR simulations, and published research." />
 	<meta property="og:url" content="https://mahmoudtarekelkady.github.io/" />
 	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://mahmoudtarekelkady.github.io/images/Me.jpg" />
+	<meta property="og:image:alt" content="Mahmoud Elkady" />
+	<meta name="twitter:image" content="https://mahmoudtarekelkady.github.io/images/Me.jpg" />
+	<meta name="twitter:image:alt" content="Mahmoud Elkady" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Mahmoud Elkady | Gameplay & XR Systems Engineer" />
 	<meta name="twitter:description" content="Explore my game development projects, XR simulations, and published research." />
@@ -28,7 +32,7 @@
 					<img src="images/Me.jpg" alt="Mahmoud Elkady">
 				</div>
 				<div class="info">
-					<h2>Mahmoud Elkady | Gameplay & XR Systems Engineer</h2>
+					<h1>Mahmoud Elkady | Gameplay & XR Systems Engineer</h1>
 					<p>Architecting immersive gameplay systems and XR experiences with Unity, Unreal Engine, and cutting-edge interactive technologies.</p>
 					<ul class="actions">
 						<li><a href="assets/cv/Elkady_Resume.pdf" class="button primary icon solid fa-download" target="_blank" download>Download Resume</a></li>
@@ -38,7 +42,7 @@
 		</div>
 
 		<!-- Navigation -->
-		<nav id="nav">
+		<nav id="nav" aria-label="Main navigation">
 			<ul class="links">
 				<li class="active"><a href="index.html">Home</a></li>
 				<li><a href="#projects">Projects</a></li>
@@ -48,8 +52,8 @@
 				<li class="hire-me-nav-item"><a href="#footer" class="glowing-btn">Hire Me</a></li>
 			</ul>
 			<ul class="icons">
-				<li><a href="https://www.linkedin.com/in/mahmoudelkady/" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-				<li><a href="https://github.com/MahmoudTarekElkady" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+				<li><a aria-label="LinkedIn" href="https://www.linkedin.com/in/mahmoudelkady/" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+				<li><a aria-label="GitHub" href="https://github.com/MahmoudTarekElkady" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
 			</ul>
 		</nav>
 
@@ -79,9 +83,9 @@
 		<!-- Projects Filter Section -->
 		<section id="projects" class="reveal" style="padding-bottom: 0;">
 			<div class="project-filters" style="width: 100%; text-align: center; border-bottom: 2px solid rgba(33, 41, 49, 0.1); padding-bottom: 20px; margin-bottom: 0;">
-				<button class="filter-btn active" data-filter="all" aria-label="Show all projects">All Projects</button>
-				<button class="filter-btn" data-filter="unity" aria-label="Filter by Unity Engine projects">Unity Engine</button>
-				<button class="filter-btn" data-filter="unreal" aria-label="Filter by Unreal Engine projects">Unreal Engine</button>
+				<button class="filter-btn active" data-filter="all" aria-label="Show all projects" aria-pressed="true">All Projects</button>
+				<button class="filter-btn" data-filter="unity" aria-label="Filter by Unity Engine projects" aria-pressed="false">Unity Engine</button>
+				<button class="filter-btn" data-filter="unreal" aria-label="Filter by Unreal Engine projects" aria-pressed="false">Unreal Engine</button>
 			</div>
 		</section>
 
@@ -112,7 +116,7 @@
 				</header>
 				<div class="video">
 					<!-- Uses local colorswap.mp4 walkthrough for instant high-quality layout -->
-					<div class="video-wrapper video-wrapper--card" style="max-width: 240px; margin: 0 auto;">
+					<div class="video-wrapper video-wrapper--card video-wrapper--portrait">
 						<video controls preload="metadata" style="border-radius: 8px;">
 							<source src="assets/videos/colorswap.mp4" type="video/mp4">
 							Your browser does not support the video tag.
@@ -385,10 +389,10 @@
 				<section>
 					<h3>Social</h3>
 					<ul class="icons alt">
-						<li><a href="assets/cv/Elkady_Resume.pdf" class="icon solid alt fa-file-pdf" target="_blank" download><span class="label">Resume</span></a></li>
-						<li><a href="https://www.facebook.com/Mahmoud.Tarek.ElKady/" class="icon brands alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.linkedin.com/in/mahmoudelkady/" class="icon brands alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/MahmoudTarekElkady" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+						<li><a aria-label="Resume" href="assets/cv/Elkady_Resume.pdf" class="icon solid alt fa-file-pdf" target="_blank" download><span class="label">Resume</span></a></li>
+						<li><a aria-label="Facebook" href="https://www.facebook.com/Mahmoud.Tarek.ElKady/" class="icon brands alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+						<li><a aria-label="LinkedIn" href="https://www.linkedin.com/in/mahmoudelkady/" class="icon brands alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+						<li><a aria-label="GitHub" href="https://github.com/MahmoudTarekElkady" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
 					</ul>
 				</section>
 			</section>
@@ -397,13 +401,15 @@
 		<!-- Copyright -->
 		<div id="copyright">
 			<ul>
-				<li>&copy; 2025 Mahmoud Elkady. All rights reserved.</li>
+				<li>&copy; 2026 Mahmoud Elkady. All rights reserved.</li>
 			</ul>
 		</div>
 
 	</div>
 
 	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
@@ -415,14 +421,19 @@
 			// Reveals
 			const reveals = document.querySelectorAll(".reveal");
 			const revealOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
-			const revealOnScroll = new IntersectionObserver(function(entries, observer) {
-				entries.forEach(entry => {
-					if (!entry.isIntersecting) return;
-					entry.target.classList.add("active");
-					observer.unobserve(entry.target);
-				});
-			}, revealOptions);
-			reveals.forEach(reveal => revealOnScroll.observe(reveal));
+			if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+				document.documentElement.classList.add("has-reveal");
+				const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+					entries.forEach(entry => {
+						if (!entry.isIntersecting) return;
+						entry.target.classList.add("active");
+						observer.unobserve(entry.target);
+					});
+				}, revealOptions);
+				reveals.forEach(reveal => revealOnScroll.observe(reveal));
+			} else {
+				reveals.forEach(reveal => reveal.classList.add("active"));
+			}
 
 			// Filters
 			const filterBtns = document.querySelectorAll(".filter-btn");
@@ -430,8 +441,12 @@
 
 			filterBtns.forEach(btn => {
 				btn.addEventListener("click", () => {
-					filterBtns.forEach(b => b.classList.remove("active"));
+					filterBtns.forEach(b => {
+						b.classList.remove("active");
+						b.setAttribute("aria-pressed", "false");
+					});
 					btn.classList.add("active");
+					btn.setAttribute("aria-pressed", "true");
 					const category = btn.getAttribute("data-filter");
 
 					projects.forEach(project => {
